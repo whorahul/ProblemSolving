@@ -58,7 +58,7 @@ void suff_arr() {
       }
    }
 }
-//Longest Common Preffix
+
 void lcp() {
    int tam = 0, i, j;
    for(i = 0; i < n; i++)if (p[i] > 0) {
@@ -82,7 +82,7 @@ int main(){
     suff_arr();
     lcp();
     vector<int> l(n);
-    //Compute the l'
+    
     for (int i = n-1,acum=1; i >= 0; --i)
     {
         if(s[i]<'a')
